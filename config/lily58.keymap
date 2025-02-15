@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -34,7 +35,7 @@
 &kp TAB    &mt RA(Q) Q  &kp W        &kp E             &kp R        &kp T                         &mt RA(Y) Y  &kp U        &kp I         &kp O    &mt RA(P) P                 &kp MINUS
 &kp LCTRL  &kp A        &mt RA(S) S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G                         &kp H        &mt RCTRL J  &mt RSHIFT K  &kp L    &kp SEMI                    &kp SQT
 &kp LSHFT  &kp Z        &kp X        &kp C             &kp V        &kp B   &kp HOME     &kp END  &kp N        &kp M        &kp COMMA     &kp DOT  &mt NON_US_BACKSLASH SLASH  &kp RSHFT
-                                     &kp LALT          &kp LGUI     &mo 1   &kp SPACE    &kp RET  &mo 2        &kp BSPC     &kp RGUI
+                                     &kp LALT          &kp LGUI     &mo 1   &kp SPACE    &kp RET  &mo 2        &kp BSPC     &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -50,11 +51,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans  &trans  &trans  &trans  &trans  &bc_assign
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans   &trans   &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans   &trans   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans   &trans   &trans   &trans    &trans  &trans  &trans  &trans
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans  &trans                &trans                 &trans     &trans        &bc_assign
+&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12                    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL     &trans
+&trans  &trans  &trans  &trans   &trans   &trans                     &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &kp ASTERISK  &trans
+&trans  &trans  &trans  &trans   &trans   &trans   &trans    &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &trans        &trans
+                        &trans   &trans   &trans   &trans    &trans  &trans  &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -70,11 +71,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &trans  &trans  &trans   &trans   &trans                     &trans       &trans     &trans     &trans    &trans     &trans
-&trans  &trans  &trans  &trans   &trans   &trans                     &trans       &trans     &trans     &trans    &trans     &trans
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                        &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &trans      &trans            &trans                              &trans       &trans     &trans     &trans    &trans     &trans
+&trans      &trans        &trans        &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT                          &trans       &trans     &trans     &trans    &trans     &trans
+&trans      &trans        &trans        &trans      &trans            &trans                              &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
+&trans      &trans        &trans        &trans      &trans            &trans      &trans          &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+                                        &trans      &trans            &trans      &kp LEFT_ALT    &trans  &trans       &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
