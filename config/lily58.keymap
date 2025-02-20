@@ -76,7 +76,7 @@
 &kp TAB    &mt RA(Q) Q  &kp W        &kp E             &kp R        &kp T                         &mt RA(Y) Y  &kp U        &kp I          &kp O    &mt RA(P) P                 &kp MINUS
 &kp LCTRL  &kp A        &mt RA(S) S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G                         &kp H        &mt RCTRL J  &mt RSHIFT K   &kp L    &kp SEMI                    &kp SQT
 &kp LSHFT  &kp Z        &kp X        &kp C             &kp V        &kp B   &kp HOME     &kp END  &kp N        &kp M        &kp COMMA      &kp DOT  &mt NON_US_BACKSLASH SLASH  &kp RSHFT
-                                     &kp LALT          &kp LGUI     &mo 1   &kp SPACE    &kp RET  &mo 2        &kp BSPC     &kp RIGHT_ALT
+                                     &kp LALT          &kp LCMD     &mo 1   &kp SPACE    &kp RET  &mo 2        &kp BSPC     &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -123,16 +123,26 @@
         };
 
         game {
-            display-name = "Base";
+            display-name = "game";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                        &kp N6  &kp N7    &kp N8     &kp N9   &kp N0                      &kp GRAVE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                         &kp Y   &kp U     &kp I      &kp O    &kp P                       &kp MINUS
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                         &kp H   &kp J     &kp K      &kp L    &kp SEMI                    &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp HOME     &kp END  &kp N   &kp M     &kp COMMA  &kp DOT  &mt NON_US_BACKSLASH SLASH  &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET  &mo 2   &kp BSPC  &to 0
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                        &kp N6  &kp N7    &kp N8     &kp N9   &kp N0                      &kp GRAVE
+&kp TAB    &kp Q   &kp W   &kp E     &kp R   &kp T                         &kp Y   &kp U     &kp I      &kp O    &kp P                       &kp MINUS
+&kp LCTRL  &kp A   &kp S   &kp D     &kp F   &kp G                         &kp H   &kp J     &kp K      &kp L    &kp SEMI                    &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V   &kp B   &kp HOME     &kp END  &kp N   &kp M     &kp COMMA  &kp DOT  &mt NON_US_BACKSLASH SLASH  &kp RSHFT
+                           &kp LALT  &mo 4   &mo 1   &kp SPACE    &kp RET  &mo 2   &kp BSPC  &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        game+ {
+            bindings = <
+&trans  &trans    &trans    &trans     &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp I   &trans    &kp UP    &trans     &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
