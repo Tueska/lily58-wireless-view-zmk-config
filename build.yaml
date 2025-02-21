@@ -15,11 +15,11 @@
 include:
   # Basic
   - board: nice_nano_v2
-    shield: lily58_left nice_view_adapter nice_view
+    shield: lily58_left nice_view_adapter nice_view_gem
     artifact-name: left-bt
     snippet: studio-rpc-usb-uart
   - board: nice_nano_v2
-    shield: lily58_right nice_view_adapter nice_view
+    shield: lily58_right nice_view_adapter nice_view_gem
     artifact-name: right-bt
 
   # Dongle
