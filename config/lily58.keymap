@@ -104,11 +104,11 @@
 
         game+ {
             bindings = <
-&kp ESC  &kp F1    &kp F2    &kp F3     &kp F4    &kp F5                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp I    &trans    &kp UP    &trans     &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans    &trans    &trans     &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans     &kp LGUI  &trans  &trans    &trans  &trans  &trans  &trans
+&kp ESC  &kp F1    &kp F2    &kp F3     &kp F4  &kp F5                      &trans  &trans  &trans  &trans  &trans  &trans
+&kp I    &trans    &kp UP    &trans     &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans    &trans    &trans     &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans     &trans  &kp LGUI  &trans    &trans  &trans  &trans  &trans
             >;
 
             label = "Game+";
