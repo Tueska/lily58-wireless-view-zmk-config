@@ -79,6 +79,11 @@
             key-positions = <37 38>;
             layers = <0>;
         };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <36 49>;
+        };
     };
 
     keymap {
