@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: infely
       url-base: https://github.com/infely
+    - name: janpfischer
+      url-base: https://github.com/janpfischer
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -21,6 +23,9 @@ manifest:
       revision: main
     - name: nice-view-battery
       remote: infely
+      revision: main
+    - name: zmk-dongle-screen
+      remote: janpfischer
       revision: main
   self:
     path: config
