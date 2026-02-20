@@ -2,22 +2,19 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: m165437
-      url-base: https://github.com/M165437
     - name: carrefinho
       url-base: https://github.com/carrefinho
     - name: infely
       url-base: https://github.com/infely
-    - name: janpfischer
-      url-base: https://github.com/janpfischer
+    - name: bwshockley
+      url-base: https://github.com/bwshockley
+    - name: gpeye
+      url-base: https://github.com/GPeye
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: nice-view-gem
-      remote: m165437
-      revision: main
     - name: prospector-zmk-module
       remote: carrefinho
       revision: main
@@ -25,7 +22,10 @@ manifest:
       remote: infely
       revision: main
     - name: zmk-dongle-screen
-      remote: janpfischer
+      remote: bwshockley
+      revision: main
+    - name: hammerbeam-slideshow
+      remote: gpeye
       revision: main
   self:
     path: config
