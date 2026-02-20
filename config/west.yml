@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: carrefinho
-      url-base: https://github.com/carrefinho
     - name: infely
       url-base: https://github.com/infely
     - name: bwshockley
@@ -15,9 +13,6 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: prospector-zmk-module
-      remote: carrefinho
-      revision: main
     - name: nice-view-battery
       remote: infely
       revision: main
