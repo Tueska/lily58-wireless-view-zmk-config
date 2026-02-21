@@ -55,49 +55,44 @@
             require-prior-idle-ms = <50>;
         };
 
-        combo_delete {
-            bindings = <&kp DEL>;
-            key-positions = <42 43>;
-            layers = <0>;
-            require-prior-idle-ms = <50>;
-        };
-
-        combo_copy {
-            bindings = <&kp LG(C)>;
-            key-positions = <38 39>;
-            layers = <0>;
-        };
-
-        combo_paste {
-            bindings = <&kp LG(V)>;
-            key-positions = <39 40>;
-            layers = <0>;
-        };
-
-        combo_cut {
-            bindings = <&kp LG(X)>;
-            key-positions = <37 38>;
-            layers = <0>;
-        };
-
         caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <36 49>;
         };
 
-        cut-win {
-            bindings = <&kp LC(X)>;
-            key-positions = <37 38>;
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <14 15>;
         };
 
-        copy-win {
-            bindings = <&kp LC(C)>;
+        left_br_open {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <15 16>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <25 26>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <26 27>;
+        };
+
+        left_parent {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <27 28>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
             key-positions = <38 39>;
         };
 
-        paste-win {
-            bindings = <&kp LC(V)>;
-            key-positions = <40 39>;
+        brace_left {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <39 40>;
         };
     };
 
